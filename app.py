@@ -25,6 +25,6 @@ class InferlessPythonModel:
 
 @inferless.local_entry_point
 def my_local_entry(dynamic_params):
-    from app import InferlessPythonModel 
+
     model_instance = InferlessPythonModel()
-    return model_instance.infer(RequestObjects(dynamic_params))
+    return model_instance.infer(RequestObjects(**dynamic_params))
