@@ -19,4 +19,4 @@ Example files are in the repo
 
 ### Optionally 
 
-You can use the runtime file to add custom apt or pip packages, You can create a runtime in inferless and use it with multiple models 
+You can use the runtime.yaml file to add custom apt or pip packages, You can create a runtime in inferless and use it with multiple models 
