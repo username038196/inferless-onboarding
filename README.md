@@ -16,3 +16,7 @@ Create a class InferlessPythonModel with initialize and infer methods to load th
 - infer - Should take the input and return the pydantic object of type response 
 
 Example files are in the repo 
+
+### Optionally 
+
+You can use the runtime file to add custom apt or pip packages, You can create a runtime in inferless and use it with multiple models 
