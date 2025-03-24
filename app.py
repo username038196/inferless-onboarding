@@ -1,5 +1,3 @@
-import torch
-from transformers import pipeline
 from pydantic import BaseModel, Field
 import inferless
 
@@ -15,6 +13,8 @@ app = inferless.Cls(gpu="T4")
 class InferlessPythonModel:
     @app.load
     def initialize(self):
+        import torch
+        from transformers import pipeline
         self.generator = pipeline("text-generation", model="EleutherAI/gpt-neo-125M",device=0)
     @app.infer
     def infer(self, inputs: RequestObjects) -> ResponseObjects:
